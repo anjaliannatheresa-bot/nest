@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="data:image/png;base64,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">INFORMATION TECHNOLOGY
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="ind.html">HOME</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="about.html">ABOUT US</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cont.html">CONTACT US</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            SERVICES
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="cloud services.html">cloud services</a></li>
+            <li><a class="dropdown-item" href="cybersec.html">Cyber security</a></li>
+            <li><a class="dropdown-item" href="dataeng.html">Data Engineering</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+   <header>
+    <h2>Contact Us</h2>
+</header>
+
+<div class="container mt-5">
+    <div class="row">
+
+        <!-- LEFT SIDE : GET IN TOUCH -->
+        <div class="col-md-6">
+            <h1>Get In Touch</h1>
+
+            <form>
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control mb-3">
+
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control mb-3">
+
+                <label class="form-label">Message</label>
+                <textarea rows="4" class="form-control mb-3"></textarea>
+
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!-- RIGHT SIDE : ACCORDION -->
+        <div class="col-md-6">
+            <h2 class="mb-3"> FAQ</h2>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne">
+                            What does NeST Digital do?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            NeST Digital is the software and digital services division of the NeST Group, focusing on delivering technology solutions by integrating deep domain knowledge with digital platforms, leveraging AI, Machine Learning (ML), Robotic Process Automation (RPA), and other advanced tech for engineering and manufacturing clients globally, providing services like software development and engineering design. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo">
+                            What is the interview process and culture like at NeST Digital?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            The interview process involves technical rounds (covering OOP, SQL, logic, etc.), manager rounds, and HR, with varying experiences reported, some noting dismissive attitudes, while the company culture emphasizes a strong work-from-office policy, with a focus on leveraging their manufacturing and engineering background into digital transformation. 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree">
+                            What are common technical questions asked during interviews?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Common technical questions focus on Object-Oriented Programming (OOP) principles (Encapsulation, Inheritance, etc.), database knowledge (SQL), specific technologies like the ELK Stack (Elasticsearch, Logstash, Kibana), and potentially crisis handling or logic tests, especially for software roles. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+  
+<footer>
+    © 2025 Nest Digital pvt Ltd | All Rights Reserved
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
